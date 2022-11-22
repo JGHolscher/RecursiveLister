@@ -1,2 +1,4 @@
-package TestFileExtra123;public class testing123_2 {
+package TestFileExtra123;
+
+public class testing123_2 {
 }
