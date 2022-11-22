@@ -112,7 +112,8 @@ public class RecursiveListerFrame extends JFrame {
 
     }
 
-    private void search() {
+    //JFileChooser - searches
+    private void search() { //DONE
         JFileChooser chooser = new JFileChooser();
         chooser.setDialogTitle("Choose A Directory: ");
 
@@ -124,7 +125,7 @@ public class RecursiveListerFrame extends JFrame {
         if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
             File chosenDir = chooser.getSelectedFile();
             displayTA.setText("Chosen Directory:   " + chosenDir + "\n\n"); //names the chosen directory
-            displayTA.append("Sub-directories, Files from Sub-directories, and Files from chosen Directory are Listed Below." +"\n\n\n"); //names the chosen directory
+            displayTA.append("Sub-directories, Files from Sub-directories, and Files from chosen Directory are Listed Below." +"\n\n\n");
 
 
             //list the file names + list directory names and sub files and directory names
@@ -134,7 +135,8 @@ public class RecursiveListerFrame extends JFrame {
             displayTA.append("File not found! Try Again!");
     }
 
-    private void listNames(File f) {
+    //list the file names + list directory names and sub files and directory names
+    private void listNames(File f) { //DONE
         File Names[] = f.listFiles();
 
         if (Names != null) {
